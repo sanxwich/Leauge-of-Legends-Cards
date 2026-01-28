@@ -243,3 +243,63 @@ body {
 .Bold-ab {
   font-family: "BeaufortforLOL_BoldItalic", sans-serif;
 }
+@media screen and (max-width: 1500px) {
+  .title {
+    font-size: 60px;
+    line-height: 1;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cards {
+    max-width: 1280px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 320px));
+  }
+}
+
+@media (max-width: 720px) {
+  .cards {
+    max-width: 1280px;
+    grid-template-columns: repeat(2, minmax(280px, 250px));
+  }
+}
+
+/* Phones */
+@media (max-width: 620px) {
+  .title {
+    font-size: 40px;
+    line-height: 0.9;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .cards {
+    max-width: 1280px;
+    grid-template-columns: repeat(1, minmax(280px, 320px));
+  }
+
+  .bottom p {
+    display: none;
+  }
+
+  .logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .overlay.logo {
+    object-fit: cover;
+    width: auto;
+    height: 20%;
+
+    top: 30%;
+    left: 0;
+  }
+}
