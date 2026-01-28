@@ -288,18 +288,4 @@ body {
   .bottom p {
     display: none;
   }
-
-  .logo {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .overlay.logo {
-    object-fit: cover;
-    width: auto;
-    height: 20%;
-
-    top: 30%;
-    left: 0;
-  }
 }
