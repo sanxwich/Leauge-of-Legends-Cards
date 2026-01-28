@@ -35,6 +35,7 @@ body {
   background-position: center;
   background-attachment: fixed;
 }
+
 .header {
   text-align: center;
   margin-bottom: 36px;
@@ -73,7 +74,6 @@ body {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
 
-  cursor: pointer;
   background: linear-gradient(
     135deg,
     #2ec4b6,
@@ -88,6 +88,13 @@ body {
 .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+.champ-title h3 {
+  font-size: 1.17em;
+  font-weight: bold;
+  font-family: "BeaufortforLOL_BoldItalic", sans-serif;
+  color: gold;
+  font-style: italic;
 }
 .profile-picture {
   width: 100%;
@@ -143,6 +150,14 @@ body {
 .bot-icon {
   width: 50px;
   height: 50px;
+}
+.mid-icon {
+  width: 50px;
+  height: 50px;
+}
+.badge-mid {
+  display: inline-block;
+  font-size: 12px;
 }
 .badge {
   display: inline-block;
@@ -218,6 +233,12 @@ body {
 }
 .card.jhin {
   background: linear-gradient(135deg, #4b0082, #b76e79);
+}
+.card.sylas {
+  background: linear-gradient(135deg, #4b4b4b, #6a0dad);
+}
+.card.rakan {
+  background: linear-gradient(135deg, #228b22, #1e90ff);
 }
 .Bold-ab {
   font-family: "BeaufortforLOL_BoldItalic", sans-serif;
