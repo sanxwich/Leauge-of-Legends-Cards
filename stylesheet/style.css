@@ -61,7 +61,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(280px, 400px));
   justify-content: center;
   gap: 36px;
-  border: 4px dashed #ffdc00;
+
   padding-bottom: 36;
 }
 .card {
