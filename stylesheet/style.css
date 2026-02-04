@@ -27,22 +27,30 @@ body {
   flex-direction: column;
   align-items: center;
   background: #ffffff;
-
-  padding-top: 96px;
   background-image: url(/background/league_background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
-
-.header {
+.top_cover {
+  background-color: #000000;
+  display: flex;
+  text-align: left;
+  width: 100vw;
+  padding: 0px;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  z-index: 1000;
+}
+.head h1 {
   text-align: center;
-  margin-bottom: 36px;
+  margin-bottom: 5px;
 }
 .title {
   font-size: 90px;
-  color: #ffdc00;
+  color: #daa520;
   font-weight: 700;
   display: block;
   font-style: italic;
@@ -51,19 +59,21 @@ body {
 .subtitle {
   font-size: 30px;
   font-family: "BeaufortforLOL-Heavy", sans-serif;
-  color: #ffffff;
-  margin-top: 8px;
+  color: darkorange;
+  margin-top: 4px;
   opacity: 0.95;
   line-height: 1.6;
+  margin-bottom: 13px;
 }
 .cards {
   max-width: 1440px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 400px));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 500px));
   justify-content: center;
-  gap: 36px;
+  gap: 80px;
 
   padding-bottom: 36;
+  margin-bottom: 45px;
 }
 .card {
   display: flex;
@@ -243,6 +253,10 @@ body {
 .Bold-ab {
   font-family: "BeaufortforLOL_BoldItalic", sans-serif;
 }
+.icon_image {
+  width: 100px;
+  height: 100px;
+}
 @media screen and (max-width: 1500px) {
   .title {
     font-size: 60px;
@@ -254,6 +268,7 @@ body {
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px;
   }
 
   .cards {
@@ -276,10 +291,6 @@ body {
     line-height: 0.9;
   }
 
-  .subtitle {
-    font-size: 14px;
-  }
-
   .cards {
     max-width: 1280px;
     grid-template-columns: repeat(1, minmax(280px, 320px));
@@ -288,4 +299,7 @@ body {
   .bottom p {
     display: none;
   }
+}
+.footrer{
+  
 }
